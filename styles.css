@@ -44,6 +44,7 @@ body {
     flex: 0 1 23%;
     aspect-ratio: 1;
     margin: 2% 0 0 2%;
+    font-size: 30px;
     border: none;
 }
 
@@ -54,12 +55,20 @@ body {
 }
 
 .operator {
-    background-color: #c1ddd3;
+    background-color: #91edcc;
 }
 
-.sign, .backspace, .clear, .decimal {
-    background-color: #d7d7f9;
+.sign, .backspace, .clear {
+    background-color: #f48e77;
 } 
+
+.operand, .decimal {
+    background-color: aqua;
+}
+
 
 button.zero { flex-grow: 1; aspect-ratio: auto; }
 
+.current{
+    font-size: 50px;
+}
