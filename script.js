@@ -87,6 +87,35 @@ decimalButton.addEventListener('click', () => {
     }
 });
 
+let signButton = document.querySelector('.sign');
+// console.log(signButton)
+signButton.addEventListener('click', () => {
+    if (!operator) {
+
+        if (numOne !== '') {
+            // console.log('check')
+            if (!numOne.includes('-')) {
+               numOne = -parseFloat(numOne);
+            } else{
+               numOne = -parseFloat(numOne);
+            }
+            numOne = numOne.toString();
+            current.textContent = numOne;
+        }
+    } else {
+        // Handling decimal for second number
+        if (numTwo !== '') {
+            if (!numTwo.includes('-')) {
+                numTwo = -parseFloat(numTwo);
+            } else{
+                numTwo = -parseFloat(numTwo);
+            } 
+            numTwo = numTwo.toString();
+            current.textContent = numTwo;
+        }
+    }
+})
+
 
 let backspace = document.querySelector('.backspace');
 backspace.addEventListener('click', () => {
