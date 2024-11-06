@@ -4,7 +4,9 @@ let numTwo = '';
 
 window.addEventListener('keydown', (e)=> {
     let key = document.querySelector(`.${e.code}`)
-    key.click();
+    if (key){
+        key.click();
+    }
 })
 
 
