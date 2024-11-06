@@ -59,6 +59,10 @@ operands.forEach((operand) => {
             }
             current.textContent = numTwo;
         }
+
+        if ( current.textContent.length > 15){
+            current.textContent = current.textContent.substring(0, 15)
+        }
     })
 })
 
@@ -84,6 +88,9 @@ decimalButton.addEventListener('click', () => {
             }
             current.textContent = numTwo;
         }
+    }
+    if ( current.textContent.length > 15){
+        current.textContent = current.textContent.substring(0, 15)
     }
 });
 
@@ -113,6 +120,9 @@ signButton.addEventListener('click', () => {
             numTwo = numTwo.toString();
             current.textContent = numTwo;
         }
+    }
+    if ( current.textContent.length > 15){
+        current.textContent = current.textContent.substring(0, 15)
     }
 })
 

@@ -70,5 +70,5 @@ body {
 button.zero { flex-grow: 1; aspect-ratio: auto; }
 
 .current{
-    font-size: 50px;
+    font-size: clamp(1rem, 5vw, 2rem);
 }
